@@ -10,4 +10,10 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public function index()
+    {
+        $movies = Movie::all();
+        return view('home', compact('movies'));
+    }
 }
