@@ -11,9 +11,9 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function index()
-    {
-        $movies = Movie::all();
-        return view('home', compact('movies'));
-    }
+    // public function index()
+    // {
+    //     $movies = Movie::all();
+    //     return view('home', compact('movies'));
+    // }
 }

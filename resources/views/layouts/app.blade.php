@@ -9,17 +9,10 @@
 <body>
 
 
-    <header>
-        header
-    </header>
-
     <main>
         @yield('content')
     </main>
 
-    <footer>
-        footer
-    </footer>
     
 </body>
 </html>
